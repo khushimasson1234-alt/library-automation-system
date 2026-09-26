@@ -1,0 +1,266 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "Python Basics",
+      "author": "A. Smith",
+      "genre": "Programming",
+      "total_copies": 3,
+      "available_copies": 1
+    },
+    {
+      "id": 2,
+      "title": "Data Structures",
+      "author": "M. Khan",
+      "genre": "Computer Science",
+      "total_copies": 2,
+      "available_copies": 1
+    },
+    {
+      "id": 3,
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "genre": "Classic",
+      "total_copies": 2,
+      "available_copies": 0
+    },
+    {
+      "id": 4,
+      "title": "Atomic Habits",
+      "author": "J. Clear",
+      "genre": "Self Help",
+      "total_copies": 4,
+      "available_copies": 3
+    }
+  ],
+  "students": [
+    {
+      "name": "Ananya",
+      "password": "student123",
+      "fines": 250,
+      "roll_number": "120925001"
+    },
+    {
+      "name": "alice",
+      "password": "alice123",
+      "fines": 0,
+      "roll_number": "120925002"
+    },
+    {
+      "name": "bob",
+      "password": "bob123",
+      "fines": 145.0,
+      "roll_number": "120925003"
+    },
+    {
+      "name": "khushboo",
+      "password": "student123",
+      "fines": 50,
+      "roll_number": "120925004"
+    },
+    {
+      "name": "gaurav",
+      "password": "gaurav123",
+      "fines": 0,
+      "roll_number": "120925005"
+    },
+    {
+      "name": "shruti",
+      "password": "student123",
+      "fines": 20.0,
+      "roll_number": "120925006"
+    },
+    {
+      "name": "shruti",
+      "password": "student123",
+      "fines": 0,
+      "roll_number": "120925010"
+    }
+  ],
+  "loans": [
+    {
+      "student_name": "Ananya",
+      "book_id": 1,
+      "book_title": "Python Basics",
+      "borrowed_date": "2026-07-22",
+      "due_date": "2026-08-01",
+      "returned": true,
+      "returned_date": "2026-07-22",
+      "id": 1,
+      "borrower_type": "student",
+      "borrower_id": "120925001",
+      "borrower_name": "Ananya"
+    },
+    {
+      "student_name": "Ananya",
+      "book_id": 1,
+      "book_title": "Python Basics",
+      "borrowed_date": "2026-07-30",
+      "due_date": "2026-08-09",
+      "returned": false,
+      "id": 2,
+      "borrower_type": "student",
+      "borrower_id": "120925001",
+      "borrower_name": "Ananya"
+    },
+    {
+      "student_name": "Ananya",
+      "book_id": 3,
+      "book_title": "The Great Gatsby",
+      "borrowed_date": "2026-07-30",
+      "due_date": "2026-08-09",
+      "returned": true,
+      "returned_date": "2026-07-30",
+      "id": 3,
+      "borrower_type": "student",
+      "borrower_id": "120925001",
+      "borrower_name": "Ananya"
+    },
+    {
+      "student_name": "Ananya",
+      "book_id": 3,
+      "book_title": "The Great Gatsby",
+      "borrowed_date": "2026-07-30",
+      "due_date": "2026-08-09",
+      "returned": false,
+      "id": 4,
+      "borrower_type": "student",
+      "borrower_id": "120925001",
+      "borrower_name": "Ananya"
+    },
+    {
+      "student_name": "bob",
+      "book_id": 2,
+      "book_title": "Data Structures",
+      "borrowed_date": "2026-07-30",
+      "due_date": "2026-08-09",
+      "returned": false,
+      "id": 5,
+      "borrower_type": "student",
+      "borrower_id": "120925003",
+      "borrower_name": "bob"
+    },
+    {
+      "student_name": "khushboo",
+      "book_id": 1,
+      "book_title": "Python Basics",
+      "borrowed_date": "2026-09-01",
+      "due_date": "2026-09-11",
+      "returned": true,
+      "returned_date": "2026-09-01",
+      "id": 6,
+      "borrower_type": "student",
+      "borrower_id": "120925004",
+      "borrower_name": "khushboo"
+    },
+    {
+      "student_name": "khushboo",
+      "book_id": 1,
+      "book_title": "Python Basics",
+      "borrowed_date": "2026-09-01",
+      "due_date": "2026-09-11",
+      "returned": false,
+      "id": 7,
+      "borrower_type": "student",
+      "borrower_id": "120925004",
+      "borrower_name": "khushboo"
+    },
+    {
+      "student_name": "khushboo",
+      "book_id": 2,
+      "book_title": "Data Structures",
+      "borrowed_date": "2026-09-01",
+      "due_date": "2026-09-11",
+      "returned": true,
+      "returned_date": "2026-09-01",
+      "id": 8,
+      "borrower_type": "student",
+      "borrower_id": "120925004",
+      "borrower_name": "khushboo"
+    },
+    {
+      "id": 9,
+      "borrower_type": "student",
+      "borrower_id": "120925001",
+      "borrower_name": "Ananya",
+      "book_id": 3,
+      "book_title": "The Great Gatsby",
+      "borrowed_date": "2026-09-02",
+      "due_date": "2026-09-17",
+      "returned": false
+    },
+    {
+      "id": 10,
+      "borrower_type": "teacher",
+      "borrower_id": "TCH-00125",
+      "borrower_name": "Ms.Ruchika",
+      "book_id": 4,
+      "book_title": "Atomic Habits",
+      "borrowed_date": "2026-09-02",
+      "due_date": "2026-09-17",
+      "returned": false
+    }
+  ],
+  "fines": [
+    {
+      "student_name": "bob",
+      "amount": 20.0,
+      "reason": "overdue",
+      "borrower_type": "student",
+      "borrower_id": "120925003",
+      "borrower_name": "bob"
+    },
+    {
+      "student_name": "shruti",
+      "amount": 20.0,
+      "reason": "overdue",
+      "borrower_type": "student",
+      "borrower_id": "120925006",
+      "borrower_name": "shruti"
+    },
+    {
+      "borrower_type": "student",
+      "borrower_id": "120925001",
+      "borrower_name": "Ananya",
+      "loan_id": 2,
+      "automatic": true,
+      "amount": 125,
+      "reason": "Overdue: Python Basics"
+    },
+    {
+      "borrower_type": "student",
+      "borrower_id": "120925001",
+      "borrower_name": "Ananya",
+      "loan_id": 4,
+      "automatic": true,
+      "amount": 125,
+      "reason": "Overdue: The Great Gatsby"
+    },
+    {
+      "borrower_type": "student",
+      "borrower_id": "120925003",
+      "borrower_name": "bob",
+      "loan_id": 5,
+      "automatic": true,
+      "amount": 125,
+      "reason": "Overdue: Data Structures"
+    },
+    {
+      "borrower_type": "student",
+      "borrower_id": "120925004",
+      "borrower_name": "khushboo",
+      "loan_id": 7,
+      "automatic": true,
+      "amount": 50,
+      "reason": "Overdue: Python Basics"
+    }
+  ],
+  "teachers": [
+    {
+      "name": "Ms.Ruchika",
+      "password": "teacher123",
+      "fines": 0,
+      "teacher_id": "TCH-00125"
+    }
+  ]
+}
