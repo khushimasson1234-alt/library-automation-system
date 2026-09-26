@@ -1,21 +1,86 @@
-# Library Management System
+# Library Automation System
 
-Console-based Python library system with Student, Teacher, and Admin sections.
+A Python-based Library Management System designed to automate common library operations through a console-based interface.
 
-Students log in with a roll number and password. Student roll numbers must start with `120925` and finish with digits, such as `120925001`. Teachers use a unique ID in the format `TCH-00125` plus their password.
+## Features
 
-Admins use `admin123` and can find a student's data with only the roll number; a student password is never requested for this lookup. The Admin menu can create student and teacher accounts.
+- Student, Teacher, and Admin roles
+- Role-based authentication
+- Book catalog management
+- Book borrowing and returning
+- Active loan tracking
+- Overdue book detection
+- Automated fine calculation
+- Student borrowing limit
+- Student and Teacher account management
+- Input validation
+- JSON-based data persistence
+- Data migration for existing records
 
-The catalog shows a student's name and enrollment number, or a teacher's name and teacher ID. The Admin catalog also shows those details for each active borrower.
+## Technologies Used
 
-Students can have a maximum of three active borrowed books at a time.
+- Python
+- JSON
+- File Handling
+- Regular Expressions
+- Date & Time Handling
 
-Books are due 15 days after borrowing. An overdue book receives an automatic ₹50 fine, then ₹15 more after each full additional overdue week (₹50 for overdue days 1–7, ₹65 for days 8–14, etc.). The system refreshes active overdue fines whenever it opens or a menu action occurs, and it finalizes the amount when the book is returned.
+## User Roles
 
-Run with:
+### Student
+- Login
+- View available books
+- Borrow books
+- Return books
+- View active loans
+- View fines
+- Check overdue books
+
+### Teacher
+- Login
+- View books
+- Borrow and return books
+- View loans and fines
+- Check overdue books
+
+### Admin
+- Manage student and teacher accounts
+- View library catalog
+- View active loans
+- View overdue books
+- View fines
+- Find users
+
+## Borrowing Rules
+
+- Students can have a maximum of 3 active books.
+- Books are due 15 days after borrowing.
+- Overdue fines are calculated automatically.
+
+## Fine Calculation
+
+- No fine when returned on time.
+- ₹50 for overdue days 1–7.
+- ₹15 is added after each full additional overdue week.
+
+## How to Run
+
+1. Clone the repository.
+2. Open the project folder.
+3. Make sure Python is installed.
+4. Future Improvements
+Graphical user interface
+Database integration
+Email reminders
+Book search and filtering
+Barcode/QR code integration
+Advanced reports and analytics
+Author
+
+Khushboo Masson
+
+BCA Student | Python & Software Development
+5. Run:
 
 ```bash
 python main.py
-```
-
-Existing saved name-based students are automatically assigned valid roll numbers when the app starts.
